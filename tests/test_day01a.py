@@ -13,3 +13,8 @@ class TestYeah(unittest.TestCase):
         
     def test_depth_comparison(self):
         self.assertEqual(day01a.count_deeper(self.input), 7)
+        
+    def test_full_solution(self):
+        fullinput = day01a.read_input()
+        deeper_count = day01a.count_deeper(fullinput)
+        self.assertEqual(deeper_count , 1688)  # Answer confirmed for my input on AoC

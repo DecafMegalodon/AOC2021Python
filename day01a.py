@@ -16,3 +16,7 @@ def count_deeper(input):
             deeper_count += 1
         current_depth = new_depth
     return deeper_count
+    
+if __name__ == "__main__":
+    input = read_input()
+    print(count_deeper(input))
