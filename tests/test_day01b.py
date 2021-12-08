@@ -17,5 +17,6 @@ class TestDay01b(unittest.TestCase):
         
     def test_full_solution(self):
         fullinput = day01b.read_input()
-        deeper_count = day01b.count_deeper(fullinput)
-        self.assertEqual(deeper_count , 1688)  # Answer confirmed for my input on AoC
+        pooled_full = day01b.calc_sliding_sum(fullinput)
+        deeper_count = day01b.count_deeper(pooled_full)
+        self.assertEqual(deeper_count , 1728)  # Answer confirmed for my input on AoC

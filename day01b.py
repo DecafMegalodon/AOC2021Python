@@ -26,4 +26,5 @@ def count_deeper(input):
     
 if __name__ == "__main__":
     input = read_input()
-    print(count_deeper(input))
+    pooled_input = calc_sliding_sum(input)
+    print(count_deeper(pooled_input))
