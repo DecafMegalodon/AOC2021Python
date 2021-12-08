@@ -1,9 +1,9 @@
 import unittest
 import day01a
 
-class TestYeah(unittest.TestCase):
+class TestDay01a(unittest.TestCase):
     def setUp(self):
-        self.input = input = day01a.read_input("./tests/test_inputs/day01input.txt")
+        self.input = day01a.read_input("./tests/test_inputs/day01input.txt")
 
     def test_input_read(self):
         self.assertEqual(len(self.input), 10)
