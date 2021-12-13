@@ -18,7 +18,6 @@ def simulate_submarine(instructions):
     
     submarine_movements={
         "forward": lambda instr_mag, cur_d, cur_h, cur_a: (cur_d + instr_mag * cur_a, cur_h + instr_mag, cur_a),
-        "back": lambda instr_mag, cur_d, cur_h, cur_a:  (cur_d - instr_mag * cur_a, cur_h - instr_mag, cur_a),
         "up": lambda instr_mag, cur_d, cur_h, cur_a:  (cur_d, cur_h, cur_a - instr_mag),
         "down": lambda instr_mag, cur_d, cur_h, cur_a: (cur_d, cur_h, cur_a + instr_mag)
     }
