@@ -7,3 +7,6 @@ class TestDay02a(unittest.TestCase):
 
     def test_input_read(self):
         self.assertEqual(len(self.input), 6)
+        
+    def test_submarine_simulator(self):
+        self.assertEqual(day02a.simulate_submarine(self.input), 150)
