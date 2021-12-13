@@ -29,4 +29,5 @@ def simulate_submarine(instructions):
     return depth * horizontal
     
 if __name__ == "__main__":
-    read_input()
+    input = read_input()
+    print(simulate_submarine(input))
