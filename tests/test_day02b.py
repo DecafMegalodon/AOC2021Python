@@ -1,5 +1,5 @@
 import unittest
-import day02a
+import day02b
 
 class TestDay02b(unittest.TestCase):
     def setUp(self):
